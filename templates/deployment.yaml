@@ -46,9 +46,9 @@ spec:
           emptyDir: {}
         {{- if .Values.elasticsearch.tls }}
         {{- include "cortex.esCACertVolumes" . | nindent 8 }}
+        {{- end }}
         - name: es-trust-store
           emptyDir: {}
-        {{- end }}
         {{- include "cortex.wsCACertVolumes" . | nindent 8 }}
       initContainers:
         # This templating, done at runtime rather than install time,
