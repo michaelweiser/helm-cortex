@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  cortex:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-04-19T11:54:44.6729169+02:00"
+    description: A Helm chart for Kubernetes
+    digest: 84621b1a24849b1bfb72bc46f696b4df381c7a0a8f7cd9d92174741954f8225c
+    name: cortex
+    type: application
+    urls:
+    - https://michaelweiser.github.io/helm-cortex/cortex-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-04-19T11:54:44.672058518+02:00"
