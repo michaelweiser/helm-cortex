@@ -3,7 +3,25 @@ entries:
   cortex:
   - apiVersion: v2
     appVersion: latest
-    created: "2022-04-19T12:52:42.436366668+02:00"
+    created: "2022-04-20T16:12:39.567884571+02:00"
+    description: Unofficial Helm chart for Cortex, "a Powerful Observable Analysis
+      and Active Response Engine"
+    digest: 15dbab1056a606ff5b31d9e8c8654cee83836759f1403b285423012a687564e1
+    icon: http://thehive-project.org/assets/img/logos/cortex.svg
+    kubeVersion: '>=1.19.0'
+    maintainers:
+    - email: jjennings@fastmail.fm
+      name: Jared Jennings
+    name: cortex
+    sources:
+    - https://github.com/TheHive-Project/Cortex
+    type: application
+    urls:
+    - https://michaelweiser.github.io/helm-cortex/cortex-0.3.2.tgz
+    version: 0.3.2
+  - apiVersion: v2
+    appVersion: latest
+    created: "2022-04-20T16:12:39.564386154+02:00"
     description: Unofficial Helm chart for Cortex, "a Powerful Observable Analysis
       and Active Response Engine"
     digest: 9424c5d911c490af6643a6c3f3cfaf5636609da070d9d8fd66023a8cfd956ec6
@@ -21,7 +39,7 @@ entries:
     version: 0.3.1
   - apiVersion: v2
     appVersion: latest
-    created: "2022-04-19T12:52:42.435132163+02:00"
+    created: "2022-04-20T16:12:39.561581504+02:00"
     description: Unofficial Helm chart for Cortex, "a Powerful Observable Analysis
       and Active Response Engine"
     digest: 12a1276430eeeba42ead765eba7bf75f7a0b888e2bca08d9d3c70891b625d1f7
@@ -37,4 +55,4 @@ entries:
     urls:
     - https://michaelweiser.github.io/helm-cortex/cortex-0.3.0.tgz
     version: 0.3.0
-generated: "2022-04-19T12:52:42.433462571+02:00"
+generated: "2022-04-20T16:12:39.557831467+02:00"
