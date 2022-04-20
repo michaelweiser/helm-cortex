@@ -185,3 +185,14 @@ responderURLs:
 # particular, connections to Cortex instances should be configured
 # here as extras.
 extraCortexConfigurations: {}
+
+extraEnv: {}
+#  EXTRA_VAR: value
+extraVolumes: {}
+#  - name: custom-secret
+#    secret:
+#    secretName: custom-secret
+extraVolumeMounts: {}
+#  - name: custom-secret
+#    mountPath: "/etc/cortex/something"
+#    readOnly: true

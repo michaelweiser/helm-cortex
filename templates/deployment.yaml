@@ -50,6 +50,7 @@ spec:
         - name: es-trust-store
           emptyDir: {}
         {{- include "cortex.wsCACertVolumes" . | nindent 8 }}
+        {{ toYaml .Values.extraVolumes | nindent 8 }}
       initContainers:
         # This templating, done at runtime rather than install time,
         # is done so that the non-secret parts of the config file can
@@ -139,10 +140,15 @@ spec:
             - name: es-trust-store
               mountPath: {{ include "cortex.esTrustStoreDir" . | quote }}
             {{ include "cortex.wsCACertVolumeMounts" . | nindent 12 }}
+            {{ toYaml .Values.extraVolumeMounts | nindent 12 }}
           env:
             # we did the config in our configmap and initcontainers
             - name: no_config
               value: "1"
+            {{- range $key, $value := .Values.extraEnv }}
+            - name: {{ $key }}
+              value: {{ $value }}
+            {{- end }}
           ports:
             - name: http
               containerPort: 9001
